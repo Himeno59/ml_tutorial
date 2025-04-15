@@ -1,0 +1,7 @@
+from simple_perceptron import * # 同じ階層にある前提
+
+def main():
+    perceptron = SimplePerceptron()
+
+if __name__ == "__main__":
+    main()
