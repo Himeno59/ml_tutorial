@@ -17,7 +17,7 @@ class SimplePerceptron:
     def calc(self, x):
         return sgn(np.dot(self.w,x)+self.b)
 
-    def train(self, x, t):
+    def train(self, x, t): #誤り訂正法
         self.y = self.calc(x)
         self.w += self.lr * (t - self.y)*x
         self.b += self.lr * (t - self.y)
